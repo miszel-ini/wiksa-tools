@@ -1,18 +1,40 @@
+# Lista bledow
 errors:
+  # Gracz jest offline
   player-offline: '&4&lBLAD &8>> &7Ten gracz jest offline!'
+  # Gracz nie posiada permisji do uzycia komendy
   player-no-permission: '&4&lBLAD &8>> &7Nie posiadasz permisji do uzycia tej komendy!'
 
+# Lista wszystkich wiadomosci dostepnych do konfiguracji
 messages:
+  # Spis komend dostepnych na serwerze
+  # Komenda: /pomoc
   help:
     - 'pomoc 1'
     - 'pomoc 2'
     - 'pomoc 3'
+
+  # Permisja: tools.wiksa.invsee
+  # Sprawdzanie ekwipunku gracza
+  # Zmienne -> {NAME} - nazwa gracza
+  # Komenda: /invsee <GRACZ>
   invsee:
+    # Otwieranie inventory gracza
     open-target-inventory: '&9&lINVSEE &8>> &7Pomyslnie otworzyles inventory gracza &8(&9{NAME}&8)'
+    # Poprawne uzycie
     correct-usage: '&9&lINVSEE &8>> &7Poprawne uzycie: &9/invsee <player>'
+
+  # Permisja: tools.wiksa.endersee
+  # Sprawdzanie enderchest'a
+  # Zmienne -> {NAME} - nazwa gracza
+  # Komenda: /endersee <GRACZ>
   endersee:
+    # Otwieranie enderchest'a
     open-target-enderchest: '&9&lENDERSEE &8>> &7Pomyslnie otworzyles enderchest gracza &8(&9{NAME}&8)'
+    # Poprawne uzycie
     correct-usage: '&9&lENDERSEE &8>> &7Poprawne uzycie: &9/endersee <player>'
+  # Ranga PREMIUM
+  # Komenda: /premium
   premium:
     - 'ranga premium'
     - 'jedyna taka'

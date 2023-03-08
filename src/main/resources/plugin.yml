@@ -5,6 +5,8 @@ description: plugin adds lot of commands for easyhc server
 website: https://github.com/miszel-ini/wiksa-tools
 author: michal
 commands:
+  premium:
+    description: premium rank command
   pomoc:
     aliases: [help]
   invsee:

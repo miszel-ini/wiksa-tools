@@ -13,3 +13,6 @@ messages:
   endersee:
     open-target-enderchest: '&9&lENDERSEE &8>> &7Pomyslnie otworzyles enderchest gracza &8(&9{NAME}&8)'
     correct-usage: '&9&lENDERSEE &8>> &7Poprawne uzycie: &9/endersee <player>'
+  premium:
+    - 'ranga premium'
+    - 'jedyna taka'

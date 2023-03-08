@@ -2,7 +2,6 @@ package net.michal.tools.storage;
 
 import net.michal.tools.WiksaTools;
 import org.bukkit.Bukkit;
-import org.bukkit.configuration.Configuration;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 
@@ -13,7 +12,7 @@ import java.util.logging.Level;
 
 public class MessageConfiguration {
 
-    private static WiksaTools instance = WiksaTools.getInstance();
+    private static final WiksaTools instance = WiksaTools.getInstance();
 
     private static FileConfiguration msgConfig = null;
     private static File msgConfigFile = null;
@@ -21,11 +20,11 @@ public class MessageConfiguration {
     public static void reloadConfig() {
         if (msgConfigFile == null)
             msgConfigFile = new File(instance.getDataFolder(), "messages.yml");
-        msgConfig = (FileConfiguration) YamlConfiguration.loadConfiguration(msgConfigFile);
+        msgConfig = YamlConfiguration.loadConfiguration(msgConfigFile);
         InputStream defConfigStream = instance.getResource("messages.yml");
         if (defConfigStream != null) {
             YamlConfiguration defConfig = YamlConfiguration.loadConfiguration(defConfigStream);
-            msgConfig.setDefaults((Configuration)defConfig);
+            msgConfig.setDefaults(defConfig);
         }
     }
 

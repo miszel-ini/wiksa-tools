@@ -1,5 +1,6 @@
 package net.michal.tools;
 
+import net.michal.tools.commands.players.HelpCommand;
 import net.michal.tools.storage.MessageConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -24,7 +25,9 @@ public class WiksaTools extends JavaPlugin {
 
     }
     //registering player commands
-    private void registerPlayersCommands() {}
+    private void registerPlayersCommands() {
+        getCommand("pomoc").setExecutor(new HelpCommand());
+    }
     //registering admin commands
     private void registerAdminCommands() {}
     //registering listeners

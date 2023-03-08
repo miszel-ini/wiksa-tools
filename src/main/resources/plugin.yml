@@ -5,3 +5,5 @@ description: plugin adds lot of commands for easyhc server
 website: https://github.com/miszel-ini/wiksa-tools
 author: michal
 commands:
+  pomoc:
+    aliases: [help]

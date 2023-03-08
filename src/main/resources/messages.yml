@@ -1,5 +1,15 @@
+errors:
+  player-offline: '&4&lBLAD &8>> &7Ten gracz jest offline!'
+  player-no-permission: '&4&lBLAD &8>> &7Nie posiadasz permisji do uzycia tej komendy!'
+
 messages:
   help:
     - 'pomoc 1'
     - 'pomoc 2'
     - 'pomoc 3'
+  invsee:
+    open-target-inventory: '&9&lINVSEE &8>> &7Pomyslnie otworzyles inventory gracza &8(&9{NAME}&8)'
+    correct-usage: '&9&lINVSEE &8>> &7Poprawne uzycie: &9/invsee <player>'
+  endersee:
+    open-target-enderchest: '&9&lENDERSEE &8>> &7Pomyslnie otworzyles enderchest gracza &8(&9{NAME}&8)'
+    correct-usage: '&9&lENDERSEE &8>> &7Poprawne uzycie: &9/endersee <player>'

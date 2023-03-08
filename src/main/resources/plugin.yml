@@ -7,3 +7,7 @@ author: michal
 commands:
   pomoc:
     aliases: [help]
+  invsee:
+    permission: tools.wiksa.invsee
+  endersee:
+    permission: tools.wiksa.endersee

@@ -47,3 +47,20 @@ messages:
   # Leczenie gracza
   # Komenda: /heal
   player-healed: '&9&lHEAL &8>> &7Zostales uleczony!'
+
+  # Gracz dolaczyl na serwer
+  join:
+    # Nowy gracz dolaczyl na serwer
+    new-player:
+      - 'witaj'
+      - 'u nas'
+      - 'na serwerze'
+      - 'zyczymy milej gry'
+    # Staly gracz dolaczyl na serwer
+    constant-player:
+      - 'witaj'
+      - 'kojeny raz'
+      - 'u nas na serwerze'
+      - 'zyczymy milej gry'
+  # Gracz opuscil serwer
+  quit-player: '&9&lQUIT &8>> &7[&a&l+&r&7] &9{NAME}'

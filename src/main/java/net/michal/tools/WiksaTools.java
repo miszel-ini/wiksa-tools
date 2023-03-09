@@ -6,6 +6,7 @@ import net.michal.tools.commands.admin.InvSeeCommand;
 import net.michal.tools.commands.players.HelpCommand;
 import net.michal.tools.commands.players.LinksCommand;
 import net.michal.tools.commands.players.PremiumCommand;
+import net.michal.tools.listeners.player.PlayerJoinQuitListener;
 import net.michal.tools.storage.MessageConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -42,7 +43,9 @@ public class WiksaTools extends JavaPlugin {
         getCommand("heal").setExecutor(new HealCommand());
     }
     //registering listeners
-    private void registerListeners() {}
+    private void registerListeners() {
+        getServer().getPluginManager().registerEvents(new PlayerJoinQuitListener(), this);
+    }
 
     public static WiksaTools getInstance() {
         return instance;

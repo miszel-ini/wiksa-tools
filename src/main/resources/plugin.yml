@@ -5,6 +5,9 @@ description: plugin adds lot of commands for easyhc server
 website: https://github.com/miszel-ini/wiksa-tools
 author: michal
 commands:
+  heal:
+    aliases: [ulecz]
+    description: heal player (health, food)
   linki:
     aliases: [links]
     description: server links

@@ -1,6 +1,7 @@
 package net.michal.tools;
 
 import net.michal.tools.commands.admin.EnderSeeCommand;
+import net.michal.tools.commands.admin.HealCommand;
 import net.michal.tools.commands.admin.InvSeeCommand;
 import net.michal.tools.commands.players.HelpCommand;
 import net.michal.tools.commands.players.LinksCommand;
@@ -38,6 +39,7 @@ public class WiksaTools extends JavaPlugin {
     private void registerAdminCommands() {
         getCommand("invsee").setExecutor(new InvSeeCommand());
         getCommand("endersee").setExecutor(new EnderSeeCommand());
+        getCommand("heal").setExecutor(new HealCommand());
     }
     //registering listeners
     private void registerListeners() {}

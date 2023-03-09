@@ -44,3 +44,6 @@ messages:
     - 'github: https://github.com/miszel-ini/wiksa-tools'
     - 'discord: discord.gg/wiksa-tools'
     - 'strona: wiksa-tools.net'
+  # Leczenie gracza
+  # Komenda: /heal
+  player-healed: '&9&lHEAL &8>> &7Zostales uleczony!'

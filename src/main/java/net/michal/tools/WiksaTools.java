@@ -3,6 +3,7 @@ package net.michal.tools;
 import net.michal.tools.commands.admin.EnderSeeCommand;
 import net.michal.tools.commands.admin.InvSeeCommand;
 import net.michal.tools.commands.players.HelpCommand;
+import net.michal.tools.commands.players.LinksCommand;
 import net.michal.tools.commands.players.PremiumCommand;
 import net.michal.tools.storage.MessageConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -31,6 +32,7 @@ public class WiksaTools extends JavaPlugin {
     private void registerPlayersCommands() {
         getCommand("pomoc").setExecutor(new HelpCommand());
         getCommand("premium").setExecutor(new PremiumCommand());
+        getCommand("linki").setExecutor(new LinksCommand());
     }
     //registering admin commands
     private void registerAdminCommands() {

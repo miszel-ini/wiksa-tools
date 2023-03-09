@@ -38,3 +38,9 @@ messages:
   premium:
     - 'ranga premium'
     - 'jedyna taka'
+  # Linki serwerowe
+  # Komenda: /linki
+  links:
+    - 'github: https://github.com/miszel-ini/wiksa-tools'
+    - 'discord: discord.gg/wiksa-tools'
+    - 'strona: wiksa-tools.net'
